@@ -1,0 +1,47 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/mp2.py",
+            "windows": {
+                "args": [ 
+                    // "--map", "Test1",
+                    // "--granularity=2",
+                    // "--trajectory=1",
+                    // "--method=bfs",
+                    // "--save-image=test1.png",
+                    // "--save-maze=test1.txt"
+
+                    // "--map", "Test2",
+                    // "--granularity=2",
+                    // "--trajectory=2",
+                    // "--method=bfs",
+                    // "--save-image=test2.png",
+                    // "--save-maze=test2.txt"
+
+                    "--map", "BasicMap",
+                    "--granularity=2",
+                    "--trajectory=1",
+                    "--method=bfs",
+                    "--save-image=basicmap.png",
+                    "--save-maze=basicmap.txt"
+
+                    // "--config=test_config_extra.txt", 
+                    // "--map", "Test1",
+                    // "--granularity=2",
+                    // "--trajectory=1",
+                    // "--method=bfs",
+                    // "--save-image=test1.png",
+                    // "--save-maze=test1.txt"
+                ],
+            },
+            "console": "integratedTerminal"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/mp5.py",
+            "windows": {
+                "args": [ 
+                    "--dataset", "./mp5_data",
+                    // "--extra",
+                    "--lrate", "0.01",
+                    "--max_iter", "10",
+                    "--k", "5"
+                ],
+            },
+            "console": ""integratedTerminal""
+        },
+    ]
+}

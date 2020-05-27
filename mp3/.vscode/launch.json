@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        // {
+        //     "name": "Python: Current File",
+        //     "type": "python",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}/mp3.py",
+        //     "windows": {
+        //         "args": [ 
+        //             "--training", "./MP1_data_zip/train",
+        //             "--development", "./MP1_data_zip/dev",
+        //             //"--stemming", "True",   // Comment out for False
+        //             "--lower_case", "True", // Comment ouf for False
+        //             "--laplace", "0.1",
+        //             "--pos_prior", "0.8"
+        //         ],
+        //     },
+        //     "console": ""integratedTerminal""
+        // },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/mp3_mixture.py",
+            "windows": {
+                "args": [ 
+                    "--training", "./MP1_data_zip/train",
+                    "--development", "./MP1_data_zip/dev",
+                    // "--stemming", "True",    // Comment out for False
+                    "--lower_case", "True",  // Comment ouf for False
+                    // "--laplace", "0.1",
+                    "--bigram_lambda=0.5",
+                    "--unigram_smoothing=0.1",
+                    "--bigram_smoothing=0.1",
+                    "--pos_prior", "0.6"
+                ],
+            },
+            "console": ""integratedTerminal""
+        },
+    ]
+}
